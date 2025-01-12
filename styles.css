@@ -1,3 +1,9 @@
+*{
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -50,6 +56,7 @@ nav {
   align-items: center;
   margin: 0;
   padding: 0;
+  font-size:19px;
   flex: 1;
   justify-content: flex-end;
 }
@@ -61,14 +68,14 @@ nav {
 }
 
 .nav-links li {
-  margin: 0 20px;
+  margin: 0 22px;
   position: relative;
 }
 
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  font-weight: 500;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -77,7 +84,7 @@ nav {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -5px;
   width: 0;
   height: 2px;
   background-color: #e5a186;
@@ -85,6 +92,7 @@ nav {
 }
 
 .nav-links a:hover {
+  font-weight: 700;
   color: #e5a186;
 }
 
@@ -105,6 +113,8 @@ nav {
   z-index: 1;
   list-style: none;
   padding: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .nav-links .dropdown-content a {
@@ -125,21 +135,24 @@ nav {
 .btn-contact {
   background-color: white;
   color: black;
-  padding: 15px 30px;
-  border: 3px solid black;
-  border-radius: 0;
+  padding: 10px 22px;
+  border: 2px solid black;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
+  margin-bottom: 5px;
 }
 
-.btn-contact:is(:focus, :hover) {
+#btn-contact:focus,
+#btn-contact:hover {
   background-color: #e5a186;
-  border-color: #e5a186;
-  color: white;
-  transform: scale(1.1);
+  border-color: #e5a186;;
+  color: rgb(12, 12, 12);
+  /* transform: scale(0.9); */
 }
+
 @media (max-width: 768px) {
     .navbar-collapse {
         display: flex;
@@ -180,8 +193,10 @@ nav {
 
 
 /* Hero Section */
-.hero {
-  /* display: flex;
+
+  /* 
+  .hero {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -191,8 +206,9 @@ nav {
   /* background: url("/WhatsApp\ Image\ 2024-09-24\ at\ 01.04.26_9c5f6797.jpg")
     no-repeat center/cover; */
   /* position: relative;
-  z-index: 1; */
-}
+  z-index: 1; 
+}*/
+
 
 .hero h1 {
   font-size: 70px;
@@ -307,8 +323,10 @@ nav {
   border-radius: 10px;
 }
 /* Adjust carousel image height */
-.hero-duplicate{
-     /* display: flex;
+
+     /*
+     .hero-duplicate{
+      display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -316,9 +334,10 @@ nav {
     padding: 0 5%;
     margin-top: 80px; 
     /* background: url('/WhatsApp\ Image\ 2024-09-24\ at\ 01.04.26_9c5f6797.jpg') no-repeat center/cover; */
-    /* z-index: 1;  */
+    /* z-index: 1;
+  }  */
 
-}
+
 .carousel-item{
     position: relative;
      display: flex;
